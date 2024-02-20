@@ -41,7 +41,6 @@
   background-image:url("../img/beautiful-landscape.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-y: auto;
 }
 
 .myprofile {
@@ -106,12 +105,40 @@
   color: lightgrey;
 }
 
-
-
 .fa-face-smile{
   cursor: pointer;
 }
 
 .fa-face-smile:hover{
   transform: scale(1.1);
+}
+
+.chats-container {
+  height: 350px;
+  display: flex;
+  padding: 0.5em;
+  flex-direction: column;
+}
+
+.box-message {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  width: 40%;
+  font-size: 0.8em;
+  position: relative;
+}
+
+.box-message .date-message {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  margin: 0;
+  font-size: 0.7em;
+  color: #B8BABC;
+}
+
+.box-message.sent {
+  background-color: #D5F9BA;
+  align-self: flex-end;
 }
