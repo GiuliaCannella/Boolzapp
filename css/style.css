@@ -1,24 +1,47 @@
-.background-container {
-  position: relative;
+/* UTILITY */
+.bg-white {
+  background-color: #eaeaea;
+}
+
+.bg-azzurro {
+  background-color: #8edafc;
 }
 
 .green-bg {
   background-color: #2e9687;
-  height: 20vh;
+  height: 30vh;
+}
 
+.accessi {
+  color:grey;
+  font-size: 0.6em;
+}
+
+.icone {
+  color: lightgrey;
+}
+
+.icone:hover {
+  cursor: pointer;
+  color: black;
+  transform: scale(1.1);
 }
 
 .grey-bg {
   background-color: #dbdbd2;
-  height: 80vh;
-  
+  height: 70vh;
 }
 
-.container-chat {
+.container-boolzapp {
   position: absolute;
-  top: 10%;
-  left: 10%;    
+  top: 5%;
+  left: 10%;
   width: 80%;
+  height: 90%;
+  background-image:url("../img/beautiful-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-y: auto;
 }
 
 .myprofile {
@@ -27,7 +50,68 @@
   height: 50px;
 }
 
-.container-chat .nome-utente {
-    font-size: 0.8em;
-    font-weight: bold;
+.container-boolzapp .nome-utente {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.fa-bell {
+  font-size: 1.6em;
+  color: #8edafc;
+  padding: 0.3em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.notifiche-container .paragraph-notifiche {
+  font-size: 0.7em;
+  margin-bottom: 5px;
+}
+
+.notifiche-container .notifiche-link {
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.notifiche-container .notifiche-link:hover {
+  color: crimson;
+}
+
+.container-chat  {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.box-chat:hover, 
+.box-chat.active{
+  cursor: pointer;
+  background-color: #e9ebeb;
+}
+
+.nome-utente {
+  font-size: 1em;
+  margin: 0;
+}
+
+.chat-utente {
+  font-size: 0.8em;
+  color: #B8BABC;
+}
+
+.data-chat {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 0.6em;
+  color: lightgrey;
+}
+
+
+
+.fa-face-smile{
+  cursor: pointer;
+}
+
+.fa-face-smile:hover{
+  transform: scale(1.1);
 }

@@ -25,59 +25,65 @@
     <title>Boolzapp</title>
   </head>
   <body>
-    <main>
-      <div class="container-fluid">
-        <div class="background-container">
-          <div class="green-bg">
-            <div class="container-chat">
+    <div class="container-fluid">
+      <main class="position-relative">
+        <div class="green-bg">
+          <div class="container-boolzapp">
+            <div class="container-fluid">
               <div class="row">
-                <div class="col-12">
+                <div class="col-12 bg-white">
                   <div class="row">
-                    <div class="col-4 bg-danger">
+                    <div class="col-4">
                       <div class="row">
                         <div class="col-9 d-flex align-items-center">
                           <img
                             src="img/foto cv.jpeg"
-                            class="img-fluid myprofile d-flex ms-2"
+                            class="img-fluid myprofile d-flex px-1 py-1"
                             alt=""
                           />
                           <h4 class="nome-utente ms-2">Giulia Cannella</h4>
                         </div>
-                        <div class="col-3 bg-success d-flex align-items-center justify-content-end">
-                            <i class="fa-solid fa-circle-notch ms-2"></i>
-                            <i class="fa-solid fa-message ms-2"></i>
-                            <i class="fa-solid fa-ellipsis-vertical ms-2"></i>
+                        <div
+                          class="col-3 d-flex align-items-center justify-content-end"
+                        >
+                          <i
+                            class="fa-solid fa-circle-notch ms-3 fs-5 icone"
+                          ></i>
+                          <i class="fa-solid fa-message ms-3 fs-5 icone"></i>
+                          <i
+                            class="fa-solid fa-ellipsis-vertical ms-3 fs-5 icone"
+                          ></i>
                         </div>
                       </div>
                     </div>
                     <div class="col-8">
                       <div class="row">
-                        <div class="col-8 d-flex align-items-center">
+                        <div class="col-8 d-flex align-items-center ">
                           <img
                             src="img/manuel_avatar.jpg"
-                            class="img-fluid myprofile d-flex"
+                            class="img-fluid myprofile d-flex px-1 py-1"
                             alt=""
                           />
                           <div class="d-flex flex-column ms-2">
-                            <h3
-                              class="fs-6 m-0"
-                            >
-                              Manuel
-                            </h3>
-                            <p
-                              class="m-0"
-                            >
-                              Ultimo accesso oggi alle
-                            </p>
+                            <h3 class="fs-6 m-0">Manuel</h3>
+                            <p class="m-0 accessi">Ultimo accesso oggi alle</p>
                           </div>
                         </div>
-                        <div class="col-4 d-flex">
+                        <div
+                          class="col-4 d-flex align-items-center justify-content-end"
+                        >
                           <div
                             class="col-top-right justify-content-between align-items-center"
                           >
-                            <i class="fa-solid fa-circle-notch"></i>
-                            <i class="fa-solid fa-message"></i>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <i
+                              class="fa-solid fa-magnifying-glass ms-3 fs-5 icone"
+                            ></i>
+                            <i
+                              class="fa-solid fa-paperclip ms-3 fs-5 icone"
+                            ></i>
+                            <i
+                              class="fa-solid fa-ellipsis-vertical ms-3 fs-5 icone"
+                            ></i>
                           </div>
                         </div>
                       </div>
@@ -85,37 +91,85 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="grey-bg"></div>
-        </div>
-      </div>
-    </main>
-
-    <!-- <main>
-        <div class="background-container">
-          <div class="green-bg"></div>
-          <div class="grey-bg"></div>
-          <div class="container mb-2 bg-danger container-chat">
-            <div class="col-left d-flex">
-              <div class="top-sx d-flex">
-                
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div
+                      class="col-12 py-2 d-flex bg-azzurro align-items-center"
+                    >
+                      <i class="fa-solid fa-bell"></i>
+                      <div class="notifiche-container ms-2 d-flex flex-column">
+                        <p class="m-0 fw-bold paragraph-notifiche">
+                          Ricevi notifiche di nuovi messaggi
+                        </p>
+                        <a href="#" class="notifiche-link"
+                          >Disattiva notifiche desktop</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 py-2 bg-white">
+                      <div class="input-group w-100">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Cerca o inizia una nuova chat"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 bg-white">
+                      <div class="container-chat">
+                        <div
+                          class="box-chat active d-flex align-items-center py-2 px-1 position-relative"
+                        >
+                          <img
+                            src="img/avatar_1.jpg"
+                            class="myprofile"
+                            alt=""
+                          />
+                          <div
+                            class="utente ms-2 d-flex flex-column justify-content-center"
+                          >
+                            <h2 class="nome-utente">Michele</h2>
+                            <p class="chat-utente m-0">Tutto fatto!</p>
+                            <p class="data-chat">10/01/2020 16:15:22</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div
-                  class="top-dx d-flex justify-content-between align-items-center"
+                  class="col-8 container-fluid flex-column d-flex justify-content-end"
                 >
-                  <i class="fa-solid fa-circle-notch"></i>
-                  <i class="fa-solid fa-message"></i>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                  <div class="container-testo">
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="fa-regular fa-face-smile icone"></i
+                      ></span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Scrivi un messaggio"
+                        aria-describedby="basic-addon1"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-right d-flex">
-                
-              </div>
-              
             </div>
           </div>
         </div>
-      </main> -->
+        <div class="grey-bg"></div>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
